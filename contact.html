@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>संपर्क करें - प्रकृति का सौंदर्य</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>📩 हमसे संपर्क करें 🌿</h1>
+    <p>💌 हमें अपने विचार बताएं</p>
+  </header>
+  
+  <nav>
+    <a href="index.html">🏡 मुख्य पृष्ठ</a>
+    <a href="about.html">🌲 हमारे बारे में</a>
+    <a href="gallery.html">📷 गैलरी</a>
+    <a href="contact.html" class="active">📩 संपर्क करें</a>
+    <a href="admin/" class="admin-link">🔧 एडमिन</a>
+    <button onclick="toggleDarkMode()">🌙 डार्क मोड</button>
+  </nav>
+
+  <main>
+    <section>
+      <h2>✉️ संपर्क फॉर्म 🌸</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">आपका नाम:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">ईमेल:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">संदेश:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">✉️ भेजें</button>
+      </form>
+      
+      <div class="contact-info">
+        <h3>📞 अन्य संपर्क सूचना</h3>
+        <p>📍 पता: ******</p>
+        <p>📧 ईमेल: **@**.**</p>
+        <p>📱 फोन: +91 *** **** ***</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> प्रकृति प्रेमी | Developed with ❤️</p>
+    <p>🌸 प्रकृति से प्रेम करें, उसकी रक्षा करें 🌍</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
