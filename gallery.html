@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>प्रकृति गैलरी - प्रकृति का सौंदर्य</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>📷 प्रकृति गैलरी 🌄</h1>
+    <p>🌿 प्रकृति की अनुपम छटा के कुछ दृश्य 🌺</p>
+  </header>
+  
+  <nav>
+    <a href="index.html">🏡 मुख्य पृष्ठ</a>
+    <a href="about.html">🌲 हमारे बारे में</a>
+    <a href="gallery.html" class="active">📷 गैलरी</a>
+    <a href="contact.html">📩 संपर्क करें</a>
+    <a href="admin/" class="admin-link">🔧 एडमिन</a>
+    <button onclick="toggleDarkMode()">🌙 डार्क मोड</button>
+  </nav>
+
+  <main>
+    <section>
+      <h2>🌿 प्रकृति की अनुपम छवियाँ 🌿</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/600x400/?forest" alt="हरा भरा जंगल">
+          <p>🌳 हरा भरा जंगल</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/600x400/?mountain" alt="बर्फीले पर्वत">
+          <p>⛰️ बर्फीले पर्वत</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/600x400/?river" alt="निर्मल नदी">
+          <p>🌊 निर्मल नदी</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/600x400/?sunset" alt="सूर्यास्त">
+          <p>🌅 सूर्यास्त</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/600x400/?flowers" alt="रंग बिरंगे फूल">
+          <p>🌸 रंग बिरंगे फूल</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://source.unsplash.com/600x400/?wildlife" alt="वन्य जीवन">
+          <p>🦌 वन्य जीवन</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> प्रकृति प्रेमी | Developed with ❤️</p>
+    <p>🌸 प्रकृति से प्रेम करें, उसकी रक्षा करें 🌍</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
