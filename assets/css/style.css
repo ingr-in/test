@@ -1,0 +1,53 @@
+/* All your CSS from previous example */
+/* Move all style tags content here */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+      transition: all 0.3s ease-in-out;
+    }
+    header, footer {
+      background: linear-gradient(45deg, #FF9A9E 0%, #FAD0C4 99%, #FAD0C4 100%);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background: linear-gradient(to right, #FF416C, #FF4B2B);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      background: linear-gradient(to right, #FF416C, #FF4B2B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    .admin-panel {
+      background: #f8f9fa;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .admin-form {
+      margin-bottom: 20px;
+    }
