@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>एडमिन पैनल - प्रकृति का सौंदर्य</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <style>
+    .admin-container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .login-form {
+      max-width: 400px;
+      margin: 50px auto;
+    }
+    .content-editor {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: white;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🔧 एडमिन पैनल 🌿</h1>
+    <p>वेबसाइट कंटेंट प्रबंधन</p>
+  </header>
+  
+  <nav>
+    <a href="../../index.html">🏡 वेबसाइट देखें</a>
+    <button onclick="toggleDarkMode()">🌙 डार्क मोड</button>
+    <button onclick="logout()" style="float:right;">🚪 लॉग आउट</button>
+  </nav>
+
+  <main>
+    <div id="login-section" class="admin-container">
+      <h2>🔐 एडमिन लॉगिन</h2>
+      <form id="login-form" class="login-form">
+        <div class="form-group">
+          <label for="username">यूजरनेम:</label>
+          <input type="text" id="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">पासवर्ड:</label>
+          <input type="password" id="password" required>
+        </div>
+        <button type="submit">🚪 लॉग इन</button>
+      </form>
+    </div>
+
+    <div id="admin-content" class="admin-container" style="display:none;">
+      <h2>✏️ कंटेंट मैनेजमेंट</h2>
+      
+      <div class="content-editor">
+        <h3>🏠 मुख्य पृष्ठ कंटेंट</h3>
+        <textarea id="home-content" rows="5">प्रकृति वह शक्ति है जो जीवन को जन्म देती है...</textarea>
+        <button onclick="updateContent('home-content')">💾 सेव करें</button>
+      </div>
+      
+      <div class="content-editor">
+        <h3>🌲 हमारे बारे में</h3>
+        <textarea id="about-content" rows="5">हम प्रकृति प्रेमियों का एक समूह हैं...</textarea>
+        <button onclick="updateContent('about-content')">💾 सेव करें</button>
+      </div>
+      
+      <div class="stats">
+        <h3>📊 वेबसाइट स्टेटस</h3>
+        <p>अंतिम अपडेट: <span id="last-updated"></span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> प्रकृति प्रेमी | Admin Panel</p>
+  </footer>
+
+  <script src="../../assets/js/script.js"></script>
+  <script>
+    // Simple admin functionality (for demo)
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      // Demo credentials (in real app, use proper authentication)
+      if(username === 'admin' && password === 'prakriti123') {
+        document.getElementById('login-section').style.display = 'none';
+        document.getElementById('admin-content').style.display = 'block';
+        document.getElementById('last-updated').textContent = new Date().toLocaleString();
+        localStorage.setItem('loggedIn', 'true');
+      } else {
+        alert('गलत यूजरनेम या पासवर्ड!');
+      }
+    });
+
+    function updateContent(textareaId) {
+      alert('कंटेंट अपडेट हो गया! (डेमो में वास्तव में सेव नहीं होगा)');
+      document.getElementById('last-updated').textContent = new Date().toLocaleString();
+    }
+
+    function logout() {
+      localStorage.removeItem('loggedIn');
+      window.location.reload();
+    }
+
+    // Check if already logged in
+    if(localStorage.getItem('loggedIn') === 'true') {
+      document.getElementById('login-section').style.display = 'none';
+      document.getElementById('admin-content').style.display = 'block';
+      document.getElementById('last-updated').textContent = new Date().toLocaleString();
+    }
+  </script>
+</body>
+</html>
