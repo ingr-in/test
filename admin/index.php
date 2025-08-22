@@ -34,7 +34,7 @@
   </header>
   
   <nav>
-    <a href="../../index.html">🏡 वेबसाइट देखें</a>
+    <a href="../index.html">🏡 वेबसाइट देखें</a>
     <button onclick="toggleDarkMode()">🌙 डार्क मोड</button>
     <button onclick="logout()" style="float:right;">🚪 लॉग आउट</button>
   </nav>
