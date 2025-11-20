@@ -48,8 +48,7 @@ Visit `/admin.php` to manage content:
 
 ## Visit 🤝🏼 🖥️ Testing Preview
 
-[![visit] (https://github.ingr.in)]
-
+[![GitHub license](https://github.ingr.in/)](https://github.ingr.in/
 
 ## Contributing 🤝
 
