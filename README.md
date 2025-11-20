@@ -1,6 +1,6 @@
 # प्रकृति का सौंदर्य - Nature Website 🌿
 
-[![GitHub license](https://img.shields.io/github/license/yourusername/nature-website)](https://github.com/yourusername/nature-website)
+[![GitHub license](https://img.shields.io/github/license/ingr-in/nature-website)](https://github.com/ingr-in/nature-website)
 
 A beautiful Hindi website about nature with admin panel for content management.
 
