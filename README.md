@@ -16,7 +16,7 @@ A beautiful Hindi website about nature with admin panel for content management.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/nature-website.git
+git clone https://github.com/ingr-in/nature-website.git
 ```
 
 2. Import the database:
@@ -45,6 +45,11 @@ INSERT INTO sections VALUES
 Visit `/admin.php` to manage content:
 - Username: admin
 - Password: nature123
+
+## Visit 🤝🏼 🖥️ Testing Preview
+
+[!(https://github.ingr.in)]
+
 
 ## Contributing 🤝
 
